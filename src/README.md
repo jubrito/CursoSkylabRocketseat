@@ -2,18 +2,21 @@
 
 # Desafios Curso Skylab Starter - JavaScript ES6, RocketSeat
 
-## EXERCÍCIOS - MODULO 1
+**Modulo 1:** Classes, Operações com Arrays (Map, Reduce, Filter, Find), Arrow Functions, Desestruturação
+**Modulo 2:** Webpack
+**Modulo 3:** Async/Await
 
-**1) Para testar seus conhecimentos com classes, crie uma classe com nome "Admin", essa classe deve
-extender uma segunda classe chamada "Usuario".**
 
-**A classe usuário deve receber dois parâmetros no método construtor, e-mail e senha, e anotá-los
-em propriedades da classe. A classe "Admin" por sua vez não recebe parâmetros mas deve
-repassar os parâmetros de e-mail e senha à classe pai e marcar uma propriedade "admin" como
-`true` na classe.**
+## EXERCÍCIOS - MODULO 1 (CONCEITOS)
 
-**Agora com suas classes formatadas, adicione um método na classe Usuario chamado isAdmin que
-retorna se o usuário é administrador ou não baseado na propriedade `admin` ser `true` ou não.**
+### Classes
+
+**1) Para testar seus conhecimentos com classes, crie uma classe com nome "Admin", essa classe deve extender uma segunda classe chamada "Usuario"** 
+
+A classe usuário deve receber dois parâmetros no método construtor, e-mail e senha, e anotá-los em propriedades da classe. A classe "Admin" por sua vez não recebe parâmetros mas deve repassar os parâmetros de e-mail e senha à classe pai e marcar uma propriedade "admin" como `true` na classe.
+
+Agora com suas classes formatadas, adicione um método na classe Usuario chamado isAdmin que
+retorna se o usuário é administrador ou não baseado na propriedade `admin` ser `true` ou não.
 
 ```javascript
 const User1 = new Usuario('email@teste.com', 'senha123');
@@ -22,7 +25,10 @@ console.log(User1.isAdmin()) // false
 console.log(Adm1.isAdmin()) // true
 ```
 
+### Operações com Arrays (Map, Reduce, Filter, Find)
+
 **2) A partir do seguinte vetor e utilizando os métodos de array (map, reduce, filter e find):**
+
 ```javascript
 const usuarios = [
  { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
@@ -56,7 +62,10 @@ no máximo 50 anos:
 ]
 ```
 
+### Arrow Functions 
+
 **3) Converta as funções nos seguintes trechos de código em Arrow Functions:**
+
 ```javascript
 // 3.1
 const arr = [1, 2, 3, 4, 5];
@@ -92,6 +101,9 @@ const promise = function() {
  })
 }
 ```
+
+## Desestruturação
+
 **4) Exercícios de Desestruturação**  
 
 **Desestruturação Simples**
@@ -180,7 +192,7 @@ const usuario = {
 };
 ```
 
-## EXERCÍCIOS - MODULO 2
+## EXERCÍCIOS - MODULO 2 (WEBPACK)
 
 **1) Crie um arquivo chamado ```functions.js``` com o seguinte conteúdo:**
 ```javascript
@@ -191,22 +203,18 @@ export default class Usuario {
  }
 }
 ```
-**1.1 Agora em seu arquivo principal import apenas a classe Usuario renomeando-a para ClasseUsuario
-e chame a função ```info()```**
+**1.1 Agora em seu arquivo principal import apenas a classe Usuario renomeando-a para ClasseUsuario e chame a função ```info()```**
 
 **1.2 Em seu arquivo principal importe a variável de idade e exiba a mesma em tela;**
 
-**1.3 Em seu arquivo principal importe tanto a classe quanto a variável idade e renomeie a variável idade
-para ```IdadeUsuario```**
+**1.3 Em seu arquivo principal importe tanto a classe quanto a variável idade e renomeie a variável idade para ```IdadeUsuario```**
 
-## EXERCÍCIOS - MODULO 3
+## EXERCÍCIOS - MODULO 3 (ASYNC/AWAIT)
 
 Todos os exercícios abaixo necessitam que você esteja com o plugin do Async/Await do Babel e o
 babel-polyfill devidamente configurados. Em alguns exercícios é necessário instalar o Axios.
 
-### Exercício
-
-Transforme os seguintes trechos de código utilizando async/await:
+**Transforme os seguintes trechos de código utilizando async/await:**
 
 ```javascript
 // Função delay aciona o .then após 1s
